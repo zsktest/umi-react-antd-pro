@@ -1,0 +1,253 @@
+.setting {
+  min-height: calc(100vh - 96px);
+  padding: 24px 40px;
+  background: #fff;
+  border-radius: 2px;
+
+  :global {
+    .account_settings_info_title {
+      margin-bottom: 12px;
+      color: rgba(0, 0, 0, 0.85);
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+    .login_userName {
+      padding: 12px 0;
+      border-bottom: 1px solid #e8e8e8;
+
+      .content {
+        color: rgba(0, 0, 0, 0.65);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+
+    .bottom_content {
+      padding: 12px 0;
+
+      .content {
+        margin-bottom: 14px;
+        color: rgba(0, 0, 0, 0.65);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+
+        .edition_title {
+          float: left;
+        }
+
+        .edition_descriptions {
+          display: inline-block;
+          text-align: center;
+        }
+
+        .scurityName {
+          margin-left: 6px;
+          color: #1890ff;
+          cursor: pointer;
+        }
+
+        .update {
+          margin-left: 4px;
+        }
+
+        .market {
+          margin-left: 14px;
+        }
+      }
+
+      .content_div {
+        margin-bottom: 14px;
+      }
+
+      .contacts {
+        display: flex;
+
+        & > span {
+          width: 70px;
+        }
+      }
+
+      .reBuild {
+        padding-top: 12px;
+        border-top: 1px solid #e8e8e8;
+
+        .security_bottom {
+          span {
+            display: block;
+            margin-top: 6px;
+            color: rgba(0, 0, 0, 0.45);
+          }
+        }
+      }
+    }
+
+    .securitytitle {
+      position: relative;
+      margin-bottom: 20px;
+      padding-left: 6px;
+      color: rgba(0, 0, 0, 0.65);
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    .securitytitle:before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      float: left;
+      width: 2px;
+      height: 16px;
+      margin-top: -7px;
+      background: #ff525b;
+      content: '';
+    }
+
+    .persionalInfo {
+      p {
+        display: flex;
+        align-items: center;
+        margin-bottom: 14px;
+
+        .label {
+          width: 65px;
+          color: rgba(0, 0, 0, 0.65);
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 22px;
+        }
+
+        .inputbor {
+          display: inline-block;
+          width: 200px;
+          height: 30px;
+          margin-right: 8px;
+          padding-left: 8px;
+          line-height: 30px;
+          border: 1px solid rgba(0, 0, 0, 0.25);
+        }
+
+        &:last-of-type {
+          margin-bottom: 18px;
+        }
+
+        a {
+          color: #1890ff;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+    }
+
+    .versionInfo {
+      p {
+        display: flex;
+        align-items: center;
+        margin-bottom: 14px;
+
+        .label {
+          width: 65px;
+          color: rgba(0, 0, 0, 0.65);
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 22px;
+        }
+
+        .inputbor {
+          display: inline-block;
+          width: 200px;
+          height: 30px;
+          margin-right: 8px;
+          padding-left: 12px;
+          line-height: 30px;
+          background: rgba(0, 0, 0, 0.05);
+        }
+      }
+    }
+  }
+}
+
+.userpay {
+  :global {
+    .month {
+      & > p {
+        margin: 0;
+        color: #272727;
+        font-weight: bold;
+        font-size: 14px;
+        font-family: Microsoft YaHei;
+        line-height: 34px;
+
+        span {
+          color: #8d8d8d;
+          font-weight: 400;
+          font-size: 14px;
+          font-family: Microsoft YaHei;
+          line-height: 34px;
+        }
+      }
+
+      & > .operation {
+        .ant-btn {
+          margin-left: 0;
+          border-radius: 0;
+        }
+
+        .ant-btn:nth-of-type(2) {
+          border-top-right-radius: 3px;
+        }
+
+        .ant-btn:nth-of-type(1) {
+          border-top-left-radius: 3px;
+        }
+
+        .ant-input {
+          width: 76px;
+          height: 32px;
+          text-align: center;
+          vertical-align: top;
+          border-right: none;
+          border-left: none;
+          border-radius: 0;
+        }
+      }
+
+      & > span {
+        color: #8d8d8d;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: Microsoft YaHei;
+        line-height: 34px;
+      }
+
+      .payname {
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        color: #272727;
+        font-weight: bold;
+        font-size: 24px;
+        font-family: Microsoft YaHei;
+        line-height: 34px;
+      }
+
+      .paynameenquiry {
+        margin-bottom: 20px;
+        color: #ff525b;
+        font-weight: bold;
+        font-size: 24px;
+        font-family: Microsoft YaHei;
+        line-height: 34px;
+
+        span {
+          color: #ff525b;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

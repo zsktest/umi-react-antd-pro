@@ -1,0 +1,70 @@
+.perfectInvoice {
+  :global {
+    .ant-divider-horizontal.ant-divider-with-text::before,
+    .ant-divider-horizontal.ant-divider-with-text::after {
+      position: relative;
+      top: 50%;
+      width: 50%;
+      border-top: 1px dashed #e8e8e8;
+      border-bottom: 0;
+      transform: translateY(100%);
+      content: '';
+    }
+
+    .ant-divider-horizontal.ant-divider-with-text-left::before {
+      top: 50%;
+      width: 5%;
+    }
+
+    .ant-divider-horizontal.ant-divider-with-text-left::after {
+      top: 50%;
+      width: 95%;
+    }
+
+    .btn {
+      margin: 0 -24px 0 -24px;
+      padding: 10px 40px;
+      text-align: right;
+      border-top: 1px solid #e8e8e8;
+    }
+
+    .ant-modal-body {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.applyInvoice {
+  :global {
+    .ant-divider-horizontal.ant-divider-with-text::before,
+    .ant-divider-horizontal.ant-divider-with-text::after {
+      position: relative;
+      top: 50%;
+      width: 50%;
+      border-top: 1px dashed #e8e8e8;
+      border-bottom: 0;
+      transform: translateY(100%);
+      content: '';
+    }
+
+    .ant-divider-horizontal.ant-divider-with-text-left::before {
+      top: 50%;
+      width: 5%;
+    }
+
+    .ant-divider-horizontal.ant-divider-with-text-left::after {
+      top: 50%;
+      width: 95%;
+    }
+
+    .modelname {
+      margin-top: 8px;
+      padding: 10px 0;
+      background: #f9f9f9;
+
+      .ant-form-item {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}

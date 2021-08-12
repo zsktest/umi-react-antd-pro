@@ -1,0 +1,48 @@
+.approval {
+  min-height: calc(100vh - 96px);
+  background: #fff;
+  border-radius: 2px;
+  :global {
+    .account_title {
+      position: relative;
+      height: 70px;
+      padding: 0 24px;
+      h1 {
+        float: left;
+        margin: 0 20px 0 0;
+        padding: 23px 0;
+        color: #262626;
+        font-weight: 400;
+        font-size: 16px;
+        font-family: Microsoft YaHei;
+      }
+      .acconut_rightuser {
+        float: right;
+        width: 109px;
+        height: 32px;
+        margin-top: 21px;
+        margin-right: 6px;
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: Microsoft YaHei;
+        line-height: 34px;
+        text-align: center;
+        background: #ff525b;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      &:before {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        float: left;
+        width: 4px;
+        height: 16px;
+        margin-top: -7px;
+        background: #ff525b;
+        content: '';
+      }
+    }
+  }
+}

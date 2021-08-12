@@ -1,0 +1,325 @@
+.topShadow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 15px;
+  margin-top: -15px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 15px 6px;
+}
+
+.application_detail {
+  margin-top: 30px;
+  :global .application_detailimg {
+    float: left;
+    img {
+      width: 64px;
+      height: 64px;
+      // border: 1px solid #D9D9D9;
+      border: 1px solid rgba(31, 35, 41, 0.1);
+      border-radius: 50%;
+    }
+  }
+  :global .application_detailright {
+    float: left;
+    margin-left: 20px;
+    h2 {
+      margin: 0;
+      color: #474f59;
+      font-weight: bold;
+      font-size: 18px;
+      font-family: Microsoft YaHei;
+    }
+    span {
+      display: block;
+      margin-top: -6px;
+      color: #979da5;
+      font-weight: 400;
+      font-size: 14px;
+      font-family: Microsoft YaHei;
+    }
+  }
+}
+
+.client {
+  min-height: 100%;
+  background: #fafafa;
+  :global .page-header {
+    padding: 0 100px;
+    background: #fff;
+    .ant-page-header-footer .ant-tabs .ant-tabs-tab {
+      font-weight: 500;
+      font-size: 14px;
+    }
+  }
+  :global .page-content {
+    margin: 24px 100px;
+  }
+  :global .footer {
+    width: 430px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    color: #979da5;
+    text-align: center;
+    span {
+      float: left;
+      width: 80px;
+      height: 1px;
+      margin-top: 10px;
+      background: #e8e8e8;
+    }
+  }
+}
+
+.invitation {
+  display: flex;
+  height: 140px;
+  background: #e8f5fc;
+  border: 1px solid #c1ddec;
+  border-radius: 3px;
+  :global .invitation_left {
+    width: 120px;
+    height: 80px;
+    margin-top: 30px;
+    padding-top: 4px;
+    border-right: 1px solid #c1ddec;
+    div {
+      color: #474f59;
+      font-weight: bold;
+      font-size: 40px;
+      font-family: DINOT;
+      line-height: 34px;
+      text-align: center;
+    }
+    span {
+      display: block;
+      margin-top: 18px;
+      color: #979da5;
+      font-weight: 400;
+      font-size: 14px;
+      font-family: Microsoft YaHei;
+      line-height: 34px;
+      text-align: center;
+    }
+  }
+  :global .invitation_right {
+    position: relative;
+    flex: 1;
+    margin-left: 40px;
+    h1 {
+      margin-top: 26px;
+      margin-bottom: 0;
+      color: #474f59;
+      font-weight: 400;
+      font-size: 16px;
+      font-family: Microsoft YaHei;
+      em {
+        font-style: normal;
+      }
+    }
+    p {
+      margin: 0;
+      margin-top: 2px;
+      color: #b2b9c2;
+      font-weight: 400;
+      font-size: 14px;
+      font-family: Microsoft YaHei;
+    }
+    img {
+      position: absolute;
+      right: 6%;
+      bottom: 0;
+      width: 500/2px;
+    }
+    .invitation_bottom {
+      margin-top: 14px;
+      .invitation_copy {
+        float: left;
+        width: 136px;
+        height: 28px;
+        margin-right: 8px;
+        color: #474f59;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: Microsoft YaHei;
+        line-height: 26px;
+        text-align: center;
+        background: #ffffff;
+        border: 1px solid #c1ddec;
+        border-radius: 14px;
+        cursor: pointer;
+        .ant-typography-copy {
+          color: #474f59;
+        }
+      }
+      .invitation_hove {
+        float: left;
+        width: 136px;
+        height: 28px;
+        color: #474f59;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: Microsoft YaHei;
+        line-height: 26px;
+        text-align: center;
+        background: #e8f5fc;
+        border: 1px solid #c1ddec;
+        border-radius: 14px;
+        cursor: pointer;
+        transition: 0.3s all;
+        &:hover {
+          background: #dcecf5;
+        }
+      }
+    }
+  }
+}
+
+.clientHome {
+  :global .index_app {
+    position: relative;
+    height: 95px;
+    padding: 24px 24px 24px 24px;
+    background: #fff;
+    border-radius: 3px;
+    img {
+      float: left;
+      width: 80/2px;
+      margin-top: 3 px;
+      margin-right: 15px;
+    }
+    h2 {
+      margin: 0px;
+      margin-top: 1px;
+      color: #474f59;
+      font-weight: 400;
+      font-size: 14px;
+      font-family: Microsoft YaHei;
+    }
+    span {
+      display: block;
+      margin-top: 1px;
+      color: #474f59;
+      font-weight: bold;
+      font-size: 18px;
+      font-family: DINOT;
+    }
+  }
+  :global .application {
+  }
+}
+
+.uploadBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 360px;
+}
+
+.uploadUrl {
+  display: inline-block;
+  margin-top: 22px;
+  padding-bottom: 12px;
+  color: #2588e6;
+}
+
+.selfFooter {
+  float: right;
+  margin-top: 10px;
+  padding: 10px 0;
+  border: none;
+}
+
+.uploadChoice {
+  position: relative;
+  width: 488px;
+  height: 360px;
+  text-align: center;
+  background: #fafafa;
+  border: 1px dashed #d9d9d9;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-transition: border-color 0.3s;
+  transition: border-color 0.3s;
+  img {
+    width: 54px;
+    margin-top: 117px;
+    margin-bottom: 20px;
+  }
+}
+
+.uploadProcess {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: rgba(252, 252, 252, 0.9);
+  :global .process {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 431px;
+    height: 150px;
+    margin: -75px 0 0 -216px;
+    padding: 48px 32px;
+    background: #ffffff;
+    border-radius: 3px;
+    box-shadow: 0px 6px 15px 0px rgba(13, 23, 38, 0.1);
+    img {
+      width: 108/2px;
+      margin-right: 12px;
+      vertical-align: top;
+    }
+    div {
+      display: inline-block;
+      width: 300px;
+      p {
+        margin: 0;
+        margin-top: 7px;
+      }
+    }
+  }
+}
+
+.uploadFail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  :global .fail-title {
+    height: 58px;
+    padding: 0 24px;
+    line-height: 58px;
+    p {
+      float: left;
+      margin: 0;
+      i {
+        margin-right: 8px;
+        color: #ff525b;
+        font-size: 16px;
+      }
+    }
+    button {
+      float: right;
+      margin-top: 12px;
+    }
+  }
+  :global .fail-table {
+    margin: 0 24px;
+    background: #ffffff;
+    border: 1px solid #d7dae0;
+  }
+}
+
+.copyLink {
+  margin-bottom: 0 !important;
+  :global .ant-typography-copy {
+    margin-left: 0 !important;
+  }
+}

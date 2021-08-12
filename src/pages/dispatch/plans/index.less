@@ -1,0 +1,175 @@
+p {
+  margin: 0;
+}
+.account {
+  min-height: calc(100vh - 98px);
+  background: #fff;
+  .acconut_rightuser {
+    float: right;
+    width: 109px;
+    height: 32px;
+    margin-right: 24px;
+    margin-left: 10px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 34px;
+    text-align: center;
+    background: #ff525b;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  :global {
+    .ant-tabs-tab {
+      padding: 16px 20px;
+    }
+    .ant-tabs-nav {
+      margin: 0;
+    }
+  }
+}
+.listright {
+  padding: 0px 24px;
+}
+.pname {
+  span {
+    display: none;
+  }
+  &:last-child {
+    span {
+      display: block;
+    }
+  }
+}
+.constns {
+  display: flex;
+  .comleft {
+    position: relative;
+    flex: inherit;
+    width: 260px;
+    border-right: 1px solid #ebebeb;
+    transition: all 0.1s;
+    :global {
+      .menufoldrighs {
+        transform: rotate(180deg);
+      }
+      .menufold {
+        position: absolute;
+        top: 20px;
+        right: -1px;
+        width: 19px;
+        height: 32px;
+        line-height: 28px;
+        text-align: center;
+        background: #ffffff;
+        border: 1px solid #ebebeb;
+        border-right: none;
+        border-radius: 4px 0px 0px 4px;
+        cursor: pointer;
+        i {
+          color: rgba(0, 0, 0, 0.65);
+          font-size: 12px;
+        }
+        &.foldalt {
+          right: -20px;
+          z-index: 1;
+          border: 1px solid #ebebeb;
+          border-left: none;
+          border-radius: 0px 4px 4px 0px;
+        }
+      }
+    }
+    .imnname {
+      width: 200px;
+      margin: 20px 0 20px 24px;
+    }
+    .listUserycons {
+      max-height: calc(74vh);
+      overflow-y: auto;
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        li {
+          position: relative;
+          height: 46px;
+          padding-left: 25px;
+          line-height: 46px;
+          cursor: pointer;
+          transition: all 0.3s;
+          :global {
+            .anticon {
+              float: left;
+              margin: 16px 10px 0 2px;
+              opacity: 0.8;
+            }
+          }
+          p {
+            display: inline-block;
+            width: 190px;
+            overflow: hidden;
+            color: rgba(0, 0, 0, 0.65);
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+          img {
+            float: left;
+            width: 20px;
+            margin: 13px 6px 0 0;
+          }
+          &:before {
+            position: absolute;
+            right: 0;
+            width: 2px;
+            height: 46px;
+            background: #fd535c;
+            opacity: 0;
+            transition: all 0.3s;
+            content: '';
+          }
+          &:hover {
+            background: rgba(253, 83, 92, 0.08);
+            &:before {
+              opacity: 1;
+            }
+          }
+          &.alt {
+            background: rgba(253, 83, 92, 0.08);
+            &:before {
+              position: absolute;
+              right: 0;
+              width: 2px;
+              height: 46px;
+              background: #fd535c;
+              opacity: 1;
+              transition: all 0.3s;
+              content: '';
+            }
+          }
+        }
+      }
+    }
+  }
+  .comright {
+    flex: 1;
+    width: 100%;
+    h1 {
+      float: left;
+      margin: 0 20px 20px 0;
+      color: #262626;
+      font-weight: 400;
+      font-size: 16px;
+    }
+    .numbername {
+      margin-left: 6px;
+      padding: 1px 4px;
+      color: rgba(0, 0, 0, 0.45);
+      font-weight: 400;
+      font-size: 12px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      background: #fafafa;
+      border: 1px solid #f0f0f0;
+      border-radius: 3px;
+    }
+  }
+}

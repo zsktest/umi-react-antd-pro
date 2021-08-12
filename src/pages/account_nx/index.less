@@ -1,0 +1,240 @@
+.header {
+  padding: 0 24px;
+  color: #f00;
+}
+.account {
+  min-height: calc(100vh - 98px);
+  overflow: auto;
+  background: #fff;
+  .account_title {
+    position: relative;
+    min-height: 70px;
+    padding: 0 24px;
+    &:before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      float: left;
+      width: 4px;
+      height: 16px;
+      margin-top: -7px;
+      background: #ff525b;
+      content: '';
+    }
+    h1 {
+      float: left;
+      margin: 23px 20px 0 0;
+      color: #262626;
+      font-weight: 400;
+      font-size: 16px;
+    }
+    .account_name {
+      float: left;
+      margin: 0 30px 0 0;
+      color: #8c8c8c;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 70px;
+      :global {
+        .anticon {
+          margin-right: 8px;
+          font-size: 16px;
+        }
+        em {
+          color: #595959;
+          font-style: normal;
+        }
+      }
+    }
+  }
+}
+.action {
+  a {
+    margin-right: 10px;
+    font-weight: 500;
+    &:hover {
+      color: #2488e5;
+    }
+  }
+}
+
+.tip {
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+.timerTag {
+  margin: 0 0 0 2px;
+  padding: 0px 2px;
+  line-height: 1.4;
+}
+
+.loginAccount {
+  :global .ant-typography-copy {
+    display: none !important;
+    color: #333 !important;
+  }
+  &:hover :global .ant-typography-copy {
+    display: inline-block !important;
+  }
+}
+
+.tasktopend {
+  width: 50px;
+  height: 18px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  background: #b1b8bc;
+  border-radius: 8px;
+}
+
+.month {
+  :global p {
+    margin: 0;
+    color: #272727;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 34px;
+  }
+  :global span {
+    color: #8d8d8d;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 34px;
+    em {
+      font-style: normal;
+    }
+  }
+  :global .payname {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    color: #272727;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Microsoft YaHei;
+    line-height: 34px;
+    text-decoration: line-through;
+  }
+  :global .paynameenquiry {
+    margin-bottom: 20px;
+    color: #272727;
+    color: #ff525b;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Microsoft YaHei;
+    line-height: 34px;
+    span {
+      color: #ff525b;
+      font-weight: bold;
+    }
+  }
+}
+
+.accountBottom {
+  position: absolute;
+  bottom: -24px;
+  z-index: 1;
+  width: calc(100% + 48px);
+  height: 43px;
+  margin-left: -24px;
+  padding: 0 22px;
+  background: #fff;
+  border-radius: 0 0 0 10px;
+  box-shadow: -1px -6px 15px 0px rgba(0, 0, 0, 0.06);
+  :global p {
+    float: left;
+    color: #595959;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    line-height: 43px;
+    span {
+      margin: 0 4px;
+      color: #2587e5;
+    }
+  }
+  :global button {
+    float: right;
+    margin-top: 8px;
+    margin-left: 8px;
+    text-align: right;
+  }
+}
+
+.radioGroup {
+  :global img {
+    display: block;
+    margin: 0 auto;
+  }
+  :global p {
+    color: #262626;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    line-height: 33px;
+    text-align: center;
+  }
+}
+
+.userInfo {
+  :global .ant-pro-card-header {
+    padding-left: 0;
+    .ant-pro-card-title {
+      font-weight: 600;
+      font-size: 20px;
+    }
+  }
+  :global .ant-pro-card-body {
+    padding: 16px 16px 0 16px;
+  }
+  :global .box-column .ant-pro-card-body {
+    padding: 0;
+  }
+}
+
+.bline {
+  :global .ant-pro-card-body {
+    margin: 0 !important;
+    padding: 16px 0;
+    .ant-pro-card-col {
+      padding: 0 !important;
+      border-top: 1px solid #e8e8e8;
+    }
+  }
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24px;
+  border-top: 1px solid #e8e8e8;
+}
+
+.dataBox {
+  flex: 1 1 auto;
+  height: 100px;
+  margin: 24px 12px 12px 12px;
+  padding: 16px;
+  background: #f5f6f7;
+  border-radius: 4px;
+  :global h2 {
+    margin-bottom: 16px;
+    color: rgba(115, 115, 115, 1);
+    font-weight: 400;
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+  }
+  :global i {
+    margin-left: 5px;
+  }
+  :global span {
+    color: rgba(38, 38, 38, 1);
+    font-weight: bold;
+    font-size: 24px;
+    font-family: DINOT;
+  }
+}
